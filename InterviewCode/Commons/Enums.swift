@@ -12,6 +12,7 @@ public enum HomeList: String, CaseIterable {
     case iOS = "iOS Development"
     case SYS = "System Design"
     case MGMT = "Management"
+    case DTLS = "Details"
 }
 
 public enum PhtGroup: String, CaseIterable {

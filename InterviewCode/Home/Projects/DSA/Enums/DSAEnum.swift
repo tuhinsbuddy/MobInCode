@@ -15,3 +15,23 @@ public enum DSAList: String, CaseIterable {
     case heap = "Heaps"
     case graph = "Graphs"
 }
+
+public enum DSAProblems: CaseIterable {
+    enum DSAEasy: String {
+        typealias RawString = String
+        case twoSum = "Two Sum"
+        
+        
+    }
+    
+    enum DSAMedium: String {
+        typealias RawString = String
+        case twoSum = "Two Sum"
+        
+    }
+    
+    enum DSAHard: String {
+        typealias RawString = String
+        case twoSum = "Two Sum"
+    }
+}
