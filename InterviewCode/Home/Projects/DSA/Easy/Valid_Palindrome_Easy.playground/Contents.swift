@@ -1,9 +1,9 @@
-import UIKit
+import Foundation
 
 //https://leetcode.com/problems/valid-palindrome/description/
-//var greeting = "Hello, playground"
+
 //Brute Force
-func isPalBruce(_ s: String) -> Bool {
+func isPalBrute(_ s: String) -> Bool {
     var response: Bool = false
     let strArr = s.lowercased().filter { char in
         ("a" ... "z").contains(char) || ("0" ... "9").contains(char)
@@ -25,15 +25,15 @@ func isPalBruce(_ s: String) -> Bool {
     return response
 }
 
+//Using Swift
+func isPalSwift(_ s: String) -> Bool {
+    let lowerCasedString = s.lowercased()
+    let filteredString = lowerCasedString.filter { ("a"..."z").contains($0) || ("0"..."9").contains($0) }
+    let reversedString = String(filteredString.reversed())
+    
+    return filteredString == reversedString
+}
 
-//func isPalindrome(_ s: String) -> Bool {
-//    let lowerCasedString = s.lowercased()
-//    let filteredString = lowerCasedString.filter { ("a"..."z").contains($0) || ("0"..."9").contains($0) }
-//    let reversedString = String(filteredString.reversed())
-//    
-//    return filteredString == reversedString
-//}
-//
-//print(isPalindrome("A man, a plan, a canal: Panama"))
-
-print(isPalBruce("A man, a plan, a canal: Panma"))
+let str: String = "A man, a plan, a canal: Panama"
+print(isPalSwift(str))
+print(isPalBrute(str))
