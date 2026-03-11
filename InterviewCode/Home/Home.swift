@@ -18,7 +18,7 @@ struct Home: View {
                         NavigationLink {
                             Text(item)
                         } label: {
-                            Text(item)
+                            Text(CoreFunc.getSwiftFile(from: DSAProblems.DSAEasy.twoSum.fileName)?.absoluteString ?? "Empty")
                         }
                     }
                 }
@@ -31,6 +31,7 @@ struct Home: View {
                 Text("Select an item")
             }
             Text("Developed by Tuhin the noob!")
+            
         }
     }
 }
