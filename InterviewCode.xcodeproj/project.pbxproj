@@ -34,13 +34,13 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 7D728CC32F5B69BA00599F26 /* Resources */;
 			membershipExceptions = (
-				Home/Projects/DSA/Easy/Binary_Search_Easy.playground,
-				Home/Projects/DSA/Easy/Buy_Sell_Stock_Easy.playground,
-				Home/Projects/DSA/Easy/Merge_Sorted_Array_Easy.playground,
-				Home/Projects/DSA/Easy/Remove_Duplicate_Easy.playground,
-				Home/Projects/DSA/Easy/Remove_Element_Easy.playground,
-				Home/Projects/DSA/Easy/Two_Sum_Easy.playground,
-				Home/Projects/DSA/Easy/Valid_Palindrome_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Binary_Search_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Buy_Sell_Stock_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Merge_Sorted_Array_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Remove_Duplicate_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Remove_Element_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Two_Sum_Easy.playground,
+				Home/Projects/DSA/Problems/Easy/Valid_Palindrome_Easy.playground,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */

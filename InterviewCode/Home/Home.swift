@@ -16,9 +16,9 @@ struct Home: View {
                 List {
                     ForEach(items, id: \.self) { item in
                         NavigationLink {
-                            Text(item)
-                        } label: {
                             Text(CoreFunc.getSwiftFile(from: DSAProblems.DSAEasy.twoSum.fileName)?.absoluteString ?? "Empty")
+                        } label: {
+                            Text(item)
                         }
                     }
                 }
