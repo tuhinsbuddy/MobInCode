@@ -7,9 +7,9 @@
 import Foundation
 
 struct ICNetworkEngine {
-    static func get(for request: ICNRequest) -> ICNResponse {
+    static func get(for request: ICNRequest, onCompletion: (() -> ICNResponse)) {
         var response: ICNResponse = ICNResponse(code: 0)
-        guard !request.url.isEmpty else { return response }
+        guard !request.url.isEmpty else { onCompletion(); return }
         
         
         return response
