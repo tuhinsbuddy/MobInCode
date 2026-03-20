@@ -27,7 +27,7 @@ struct ICNetworkEngine {
 
 private extension ICNetworkEngine {
     private static func process(for request: ICNRequest, and type: ICNetReqType = .get) -> ICNResponse {
-        
+        guard let ur
         
         
         
