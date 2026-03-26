@@ -12,7 +12,7 @@ struct ICNetworkEngine {
         guard !request.url.isEmpty else { onCompletion(); return }
         
         
-        return response
+        onCompletion()
     }
     
     static func post(for request: ICNRequest) -> ICNResponse {
@@ -27,10 +27,10 @@ struct ICNetworkEngine {
 
 private extension ICNetworkEngine {
     private static func process(for request: ICNRequest, and type: ICNetReqType = .get) -> ICNResponse {
-        guard let ur
+//        guard let ur
         
         
         
-        
+        return ICNResponse(code: 0)
     }
 }
