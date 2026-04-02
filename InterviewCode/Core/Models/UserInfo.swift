@@ -9,8 +9,8 @@ import Foundation
 
 struct UserInfo {
     let name: String
-    let age: Int
+    let age: Int?
     let dob: Date
     let pob: String
-    let profession
+    let profession: UserProfession
 }

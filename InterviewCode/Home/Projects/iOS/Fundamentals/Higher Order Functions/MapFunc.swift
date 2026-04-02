@@ -7,9 +7,13 @@
 import Foundation
 
 struct MapFunc {
-    static func getMap(fromData data: [UserInfo]) -> [UserInfo]? {
-        var response: [UserInfo]?
+    /// Description
+    /// - Parameter data: Array of `UserInfo`
+    /// - Returns: Mapped `UserInfo` in an array where user's age is greater than or equals to 18 years.
+    static func getMappedName(fromData data: [UserInfo]) -> [String]? {
+        var response: [String]?
         guard !data.isEmpty else { return response }
-        response = data.map { $0.age > 18 }
+        response = data.map { $0.name }
+        return response
     }
 }

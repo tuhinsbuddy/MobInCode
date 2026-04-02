@@ -7,7 +7,9 @@
 import Foundation
 
 struct CompactMapFunc {
-    static func getCompactMap() {
+    static func getCompactMap(ofData data: [UserInfo]) -> [UserInfo]? {
+        var response: [UserInfo]?
+        guard !data.isEmpty else { return response }
         
     }
 }
