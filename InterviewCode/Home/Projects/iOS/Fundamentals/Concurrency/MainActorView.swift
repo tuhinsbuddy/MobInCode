@@ -16,7 +16,9 @@ struct MainActorView: View {
         }
         Button("Perform a heavy task!") {
 //            sleep(2)
-            Task.sleep(for: .seconds(2))
+            Task.detached {
+                try! await Task.sleep(for: .seconds(2))
+            }
         }.buttonStyle(.borderedProminent)
             .fontWeight(.medium)
     }
