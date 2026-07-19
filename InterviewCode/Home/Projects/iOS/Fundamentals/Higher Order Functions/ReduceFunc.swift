@@ -10,7 +10,7 @@ struct ReduceFunc {
     static func getReduced(ofData data: [UserInfo]) -> Int? {
         var response: Int?
         guard !data.isEmpty else { return response }
-        response = data.reduce(20, { $0 + $1.age })
+        response = data.reduce(20, { $0 + ($1.age ?? 0) })
         return response
     }
 }

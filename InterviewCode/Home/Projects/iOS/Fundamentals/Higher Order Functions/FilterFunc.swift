@@ -11,7 +11,7 @@ struct FilterFunc {
         var response: [UserInfo]?
         guard !data.isEmpty else { return response }
         response = data.filter({ element in
-            return element.age >= 18
+            return (element.age ?? 0) >= 18
         })
         return response
     }
