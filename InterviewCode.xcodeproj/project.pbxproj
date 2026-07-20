@@ -29,6 +29,16 @@
 		7D728CDE2F5B69BC00599F26 /* InterviewCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7DB8CCEA300D4937001FF86C /* Exceptions for "InterviewCode" folder in "InterviewCode" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Home/Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
+			);
+			target = 7D728CC42F5B69BA00599F26 /* InterviewCode */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 		7DB3BC442F6174B000124D7D /* Exceptions for "InterviewCode" folder in "Copy Bundle Resources" phase from "InterviewCode" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
@@ -43,12 +53,21 @@
 				Home/Projects/DSA/Problems/Easy/Valid_Palindrome_Easy.playground,
 			);
 		};
+		7DB8CCEB300D4937001FF86C /* Exceptions for "InterviewCode" folder in "Compile Sources" phase from "InterviewCode" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7D728CC12F5B69BA00599F26 /* Sources */;
+			membershipExceptions = (
+				Home/Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
+			);
+		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D728CC72F5B69BA00599F26 /* InterviewCode */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				7DB8CCEA300D4937001FF86C /* Exceptions for "InterviewCode" folder in "InterviewCode" target */,
+				7DB8CCEB300D4937001FF86C /* Exceptions for "InterviewCode" folder in "Compile Sources" phase from "InterviewCode" target */,
 				7DB3BC442F6174B000124D7D /* Exceptions for "InterviewCode" folder in "Copy Bundle Resources" phase from "InterviewCode" target */,
 			);
 			path = InterviewCode;
