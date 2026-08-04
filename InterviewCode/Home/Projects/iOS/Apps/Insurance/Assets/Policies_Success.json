@@ -3,7 +3,7 @@
     {
       "id": "POL-1001",
       "type": "Motor Insurance",
-      "provider": "BJAK Insurance",
+      "provider": "Company1 Insurance",
       "premium": 1250.50,
       "currency": "MYR",
       "status": "active",
@@ -15,7 +15,7 @@
     {
       "id": "POL-1002",
       "type": "Travel Insurance",
-      "provider": "BJAK Protect",
+      "provider": "Company2 Protect",
       "premium": 240.00,
       "currency": "MYR",
       "status": "expiringSoon",
