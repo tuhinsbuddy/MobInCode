@@ -1,5 +1,5 @@
 //
-//  InterviewCodeApp.swift
+//  InterviewCode.swift
 //  InterviewCode
 //
 //  Created by Tuhin Samui on 07/03/26.
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct InterviewCodeApp: App {
+struct InterviewCode: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +25,8 @@ struct InterviewCodeApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            Home()
-            PolicyListView(repo: PolicyRepository())
+            Home()
+//            PolicyListView(repo: PolicyRepository())
         }
         .modelContainer(sharedModelContainer)
     }
