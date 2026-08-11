@@ -11,7 +11,7 @@ final class PolicyRepository: PolicyRepoProtocol {
     func fetchPolicies() async throws -> [InsurancePolicy] {
         try await Task.sleep(for: .seconds(1))
         guard let path = CoreFunc.getLocalJSON(for: "Policies_Success") else {
-            throw PolicyRepoError.fileNotFound
+            throw ICREnums.fileNotFound
         }
         let data = try Data(contentsOf: path)
         let decoder = JSONDecoder()

@@ -32,7 +32,3 @@ enum PolicyStatus: String, Codable {
         }
     }
 }
-
-enum PolicyRepoError: Error {
-    case fileNotFound
-}
