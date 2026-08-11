@@ -8,15 +8,15 @@
 import Foundation
 
 protocol ContactsRepositoryProtocol {
-    func fetchContacts() async throws -> [Contacts]
+    func fetchContacts() async throws -> [Contact]
 }
 
 final class ContactsRepository: ContactsRepositoryProtocol {
-    func fetchContacts() async throws -> [Contacts] {
+    func fetchContacts() async throws -> [Contact] {
         guard let path = CoreFunc.getLocalJSON(for: "contacts") else {
             throw ICREnums.fileNotFound
         }
         let data = try Data(contentsOf: path)
-        return try JSONDecoder().decode([Contacts].self, from: data)
+        return try JSONDecoder().decode([Contact].self, from: data)
     }
 }

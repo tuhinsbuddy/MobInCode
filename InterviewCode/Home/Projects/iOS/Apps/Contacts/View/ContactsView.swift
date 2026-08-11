@@ -30,10 +30,23 @@ struct ContactsView: View {
                 await vm.loadContacts()
             }
         }
-    
+    }
     private struct contactsList: some View {
         List(vm.filteredContacts) { contact in
             ContactRow(contact: contact)
         }.listStyle(.plain)
+    }
+    
+    private func errorView(message msg: String) -> some View {
+        VStack(spacing: 16) {
+            Image(systemName: "exclamationmark.triangle")
+                .font(.largeTitle)
+            Text(msg).multilineTextAlignment(.center)
+            Button("Retry") {
+                Task {
+                    await vm.loadContacts()
+                }
+            }
+        }.padding()
     }
 }

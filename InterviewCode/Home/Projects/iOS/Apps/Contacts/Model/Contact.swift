@@ -1,5 +1,5 @@
 //
-//  Contacts.swift
+//  Contact.swift
 //  InterviewCode
 //
 //  Created by Tuhin Samui on 10/08/26.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contacts: Identifiable, Codable, Hashable {
+struct Contact: Identifiable, Codable, Hashable {
     let id: Int
     let firstName: String
     let lastName: String

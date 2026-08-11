@@ -8,8 +8,8 @@ import SwiftUI
 
 @MainActor
 final class ContactsViewModel: ObservableObject {
-    @Published var contacts: [Contacts] = []
-    @Published var filteredContacts: [Contacts] = []
+    @Published var contacts: [Contact] = []
+    @Published var filteredContacts: [Contact] = []
     @Published var searchText: String = ""
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
@@ -47,7 +47,7 @@ final class ContactsViewModel: ObservableObject {
                 filteredContacts = contacts
                 return
             }
-            let rawContacts: [Contacts] = contacts
+            let rawContacts: [Contact] = contacts
             let results = await Task.detached(priority: .userInitiated) {
                 return rawContacts.filter { contact in
                     contact.firstName.lowercased().contains(query) || contact.lastName.lowercased().contains(query) || contact.email.lowercased().contains(query) || contact.phone.lowercased().contains(query)
