@@ -37,12 +37,27 @@ final class ContactsViewModel: ObservableObject {
         self.searchTask?.cancel()
         let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         searchTask = Task {
-            try? await Task.sleep(for: .milliseconds(300))
+            do {
+                try await Task.sleep(for: .milliseconds(300))
+            } catch {
+                return
+            }
+//            try? await Task.sleep(for: .milliseconds(300))
             guard !Task.isCancelled else { return }
             if query.isEmpty {
                 filteredContacts = contacts
                 return
             }
+            let rawContacts: [Contacts] = contacts
+            let results = Task.detached(priority: .userInitiated) {
+                return rawContacts.filter { contact in
+                    <#code#>
+                }
+            }
+            
+            filteredContacts = contacts.filter({ contact in
+                contact.firstName.lowercased().contains(query) || contact.lastName.lowercased().contains(query) || contact.email.lowercased().contains(query) || contact.phone.lowercased().contains(query)
+            })
         }
     }
     
