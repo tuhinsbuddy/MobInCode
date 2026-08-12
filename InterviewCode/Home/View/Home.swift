@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     private let items: [String] = HomeList.allCases.map { $0.rawValue }
     
     var body: some View {

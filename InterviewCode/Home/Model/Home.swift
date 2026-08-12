@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct HomeModel {
+struct Home {
     let index: Int
     let title: String
     let childs: [String]

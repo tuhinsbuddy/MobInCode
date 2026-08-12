@@ -33,7 +33,7 @@
 		7DB8CCEA300D4937001FF86C /* Exceptions for "InterviewCode" folder in "InterviewCode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Home/Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
+				Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
 			);
 			target = 7D728CC42F5B69BA00599F26 /* InterviewCode */;
 		};
@@ -44,20 +44,20 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 7D728CC32F5B69BA00599F26 /* Resources */;
 			membershipExceptions = (
-				Home/Projects/DSA/Problems/Easy/Binary_Search_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Buy_Sell_Stock_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Merge_Sorted_Array_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Remove_Duplicate_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Remove_Element_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Two_Sum_Easy.playground,
-				Home/Projects/DSA/Problems/Easy/Valid_Palindrome_Easy.playground,
+				Projects/DSA/Problems/Easy/Binary_Search_Easy.playground,
+				Projects/DSA/Problems/Easy/Buy_Sell_Stock_Easy.playground,
+				Projects/DSA/Problems/Easy/Merge_Sorted_Array_Easy.playground,
+				Projects/DSA/Problems/Easy/Remove_Duplicate_Easy.playground,
+				Projects/DSA/Problems/Easy/Remove_Element_Easy.playground,
+				Projects/DSA/Problems/Easy/Two_Sum_Easy.playground,
+				Projects/DSA/Problems/Easy/Valid_Palindrome_Easy.playground,
 			);
 		};
 		7DB8CCEB300D4937001FF86C /* Exceptions for "InterviewCode" folder in "Compile Sources" phase from "InterviewCode" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 7D728CC12F5B69BA00599F26 /* Sources */;
 			membershipExceptions = (
-				Home/Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
+				Projects/iOS/Apps/Insurance/Assets/Policies_Error.json,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
