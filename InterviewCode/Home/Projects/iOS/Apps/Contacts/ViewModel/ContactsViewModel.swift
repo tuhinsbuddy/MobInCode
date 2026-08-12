@@ -4,28 +4,29 @@
 //
 //  Created by Tuhin Samui on 11/08/26.
 //
-import SwiftUI
+import Foundation
+import Combine
 
 @MainActor
 final class ContactsViewModel: ObservableObject {
-    @Published var contacts: [Contact] = []
-    @Published var filteredContacts: [Contact] = []
+    @Published private(set) var contacts: [Contact] = []
+    @Published private(set) var filteredContacts: [Contact] = []
     @Published var searchText: String = ""
-    @Published var isLoading: Bool = false
-    @Published var errorMessage: String?
+    @Published private(set) var isLoading: Bool = false
+    @Published private(set) var errorMessage: String?
     
-    private let repo: ContactsRepositoryProtocol
+    private let repository: ContactsRepositoryProtocol
     private var searchTask: Task<Void, Never>?
     
-    init(repo protocol: ContactsRepositoryProtocol = ContactsRepository()) {
-        self.repo = protocol
+    init(repo: ContactsRepositoryProtocol) {
+        self.repository = repo
     }
     
     func loadContacts() async {
         self.isLoading = true
         self.errorMessage = nil
         do {
-            self.contacts = try await repo.fetchContacts()
+            self.contacts = try await repository.fetchContacts()
             self.filteredContacts = self.contacts
         } catch {
             self.errorMessage = error.localizedDescription
@@ -62,3 +63,4 @@ final class ContactsViewModel: ObservableObject {
         self.searchTask?.cancel()
     }
 }
+

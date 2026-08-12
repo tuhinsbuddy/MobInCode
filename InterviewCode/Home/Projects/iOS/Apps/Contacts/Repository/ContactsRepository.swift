@@ -16,7 +16,9 @@ final class ContactsRepository: ContactsRepositoryProtocol {
         guard let path = CoreFunc.getLocalJSON(for: "contacts") else {
             throw ICREnums.fileNotFound
         }
-        let data = try Data(contentsOf: path)
-        return try JSONDecoder().decode([Contact].self, from: data)
+        return try await Task.detached(priority: .userInitiated) {
+            let data = try Data(contentsOf: path)
+            return try JSONDecoder().decode([Contact].self, from: data)
+        }.value
     }
 }

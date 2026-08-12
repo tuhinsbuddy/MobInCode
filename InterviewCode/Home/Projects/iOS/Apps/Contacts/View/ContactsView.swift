@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactsView: View {
-    @StateObject private var vm: ContactsViewModel = ContactsViewModel()
+    @StateObject private var vm = ContactsViewModel(repo: ContactsRepository())
     
     var body: some View {
         NavigationStack {
@@ -31,7 +31,7 @@ struct ContactsView: View {
             }
         }
     }
-    private struct contactsList: some View {
+    private var contactsList: some View {
         List(vm.filteredContacts) { contact in
             ContactRow(contact: contact)
         }.listStyle(.plain)
