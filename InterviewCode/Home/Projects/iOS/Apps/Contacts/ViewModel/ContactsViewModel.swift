@@ -15,23 +15,25 @@ final class ContactsViewModel: ObservableObject {
     @Published private(set) var isLoading: Bool = false
     @Published private(set) var errorMessage: String?
     
-    private let repository: ContactsRepositoryProtocol
+    private let repository: ContactsRepoProtocol
     private var searchTask: Task<Void, Never>?
     
-    init(repo: ContactsRepositoryProtocol) {
+    init(repo: ContactsRepoProtocol) {
         self.repository = repo
     }
     
     func loadContacts() async {
         self.isLoading = true
         self.errorMessage = nil
+        defer {
+            self.isLoading = false
+        }
         do {
             self.contacts = try await repository.fetchContacts()
             self.filteredContacts = self.contacts
         } catch {
             self.errorMessage = error.localizedDescription
         }
-        self.isLoading = false
     }
     
     func search() {

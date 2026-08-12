@@ -7,11 +7,7 @@
 
 import Foundation
 
-protocol ContactsRepositoryProtocol {
-    func fetchContacts() async throws -> [Contact]
-}
-
-final class ContactsRepository: ContactsRepositoryProtocol {
+final class ContactsRepository: ContactsRepoProtocol {
     func fetchContacts() async throws -> [Contact] {
         guard let path = CoreFunc.getLocalJSON(for: "contacts") else {
             throw ICREnums.fileNotFound

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PolicyListView: View {
     @StateObject
-    private var vm = PolicyListViewModel(repo: PolicyRepository())
+    private var vm: PolicyListViewModel = PolicyListViewModel(repo: PolicyRepository())
     
     init(repo: PolicyRepository) {
         _vm = StateObject(wrappedValue: PolicyListViewModel(repo: repo))

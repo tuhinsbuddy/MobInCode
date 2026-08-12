@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContactsView: View {
-    @StateObject private var vm = ContactsViewModel(repo: ContactsRepository())
+    @StateObject private var vm: ContactsViewModel = ContactsViewModel(repo: ContactsRepository())
+    
+    init(repo: ContactsRepoProtocol) {
+        _vm = StateObject(wrappedValue: ContactsViewModel(repo: repo))
+    }
     
     var body: some View {
         NavigationStack {
@@ -16,9 +20,11 @@ struct ContactsView: View {
                 if vm.isLoading {
                     ProgressView("Loading Contacts...")
                 } else if let errorMsg = vm.errorMessage {
-                    
+                    errorView(message: errorMsg)
+                } else if vm.filteredContacts.isEmpty && !vm.searchText.isEmpty {
+                    noResult()
                 } else {
-                    
+                    contactsList
                 }
             }
             .navigationTitle("Contacts")
@@ -47,6 +53,13 @@ struct ContactsView: View {
                     await vm.loadContacts()
                 }
             }
+        }.padding()
+    }
+    
+    private func noResult() -> some View {
+        VStack(spacing: 16) {
+            Text("No Contacts Found").font(.headline)
+            Text("Try searching different name, phone or email!").font(.subheadline).foregroundStyle(.secondary).multilineTextAlignment(.center)
         }.padding()
     }
 }

@@ -25,8 +25,9 @@ struct InterviewCode: App {
 
     var body: some Scene {
         WindowGroup {
-            Home()
+//            Home()
 //            PolicyListView(repo: PolicyRepository())
+            ContactsView(repo: ContactsRepository())
         }
         .modelContainer(sharedModelContainer)
     }

@@ -15,7 +15,7 @@ struct Contact: Identifiable, Codable, Hashable, Sendable {
     let email: String
     var fullName: String {
         guard !firstName.isEmpty, !lastName.isEmpty else { return "" }
-        return "\(firstName)\(lastName)"
+        return "\(firstName) \(lastName)"
     }
     var initials: String {
         let first: String = firstName.first.map(String.init) ?? ""
