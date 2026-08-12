@@ -1,0 +1,28 @@
+{
+  "policies": [
+    {
+      "id": "POL-1001",
+      "type": "Motor Insurance",
+      "provider": "Company1 Insurance",
+      "premium": 1250.50,
+      "currency": "MYR",
+      "status": "active",
+      "startDate": "2026-01-10T00:00:00Z",
+      "endDate": "2027-01-09T23:59:59Z",
+      "vehicleNumber": "WXY1234",
+      "isRenewable": false
+    },
+    {
+      "id": "POL-1002",
+      "type": "Travel Insurance",
+      "provider": "Company2 Protect",
+      "premium": 240.00,
+      "currency": "MYR",
+      "status": "expiringSoon",
+      "startDate": "2025-08-01T00:00:00Z",
+      "endDate": "2026-08-01T23:59:59Z",
+      "vehicleNumber": null,
+      "isRenewable": true
+    }
+  ]
+}
