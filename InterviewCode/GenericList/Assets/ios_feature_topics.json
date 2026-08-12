@@ -1,0 +1,729 @@
+{
+  "section": {
+    "id": "ios-development",
+    "title": "iOS Development",
+    "subtitle": "Hands-on iOS interview practice",
+    "topics": [
+      {
+        "id": 1,
+        "title": "Swift Concurrency Playground",
+        "category": "Swift & Concurrency",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Swift Concurrency Playground, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "swift-concurrency-playground"
+      },
+      {
+        "id": 2,
+        "title": "Actor-Based Image Loader",
+        "category": "Swift & Concurrency",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Actor-Based Image Loader, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "actor-based-image-loader"
+      },
+      {
+        "id": 3,
+        "title": "Parallel API Aggregator",
+        "category": "Swift & Concurrency",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Parallel API Aggregator, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "parallel-api-aggregator"
+      },
+      {
+        "id": 4,
+        "title": "Debounced Search",
+        "category": "Swift & Concurrency",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Debounced Search, focused on production-grade iOS design and interview discussion.",
+        "status": "in_progress",
+        "route": "debounced-search"
+      },
+      {
+        "id": 5,
+        "title": "AsyncStream Event Pipeline",
+        "category": "Swift & Concurrency",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for AsyncStream Event Pipeline, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "asyncstream-event-pipeline"
+      },
+      {
+        "id": 6,
+        "title": "Large Contacts List",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Render 10,000 contacts efficiently with List, search, debounce, cancellation, empty/loading/error states and detail navigation.",
+        "status": "in_progress",
+        "route": "large-contacts-list"
+      },
+      {
+        "id": 7,
+        "title": "Infinite Scrolling Feed",
+        "category": "SwiftUI",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Infinite Scrolling Feed, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "infinite-scrolling-feed"
+      },
+      {
+        "id": 8,
+        "title": "Pull to Refresh + Pagination",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Pull to Refresh + Pagination, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "pull-to-refresh-pagination"
+      },
+      {
+        "id": 9,
+        "title": "Dynamic Form Engine",
+        "category": "SwiftUI",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Dynamic Form Engine, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "dynamic-form-engine"
+      },
+      {
+        "id": 10,
+        "title": "Reusable Design System",
+        "category": "SwiftUI",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Reusable Design System, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "reusable-design-system"
+      },
+      {
+        "id": 11,
+        "title": "Custom Bottom Sheet",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Custom Bottom Sheet, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "custom-bottom-sheet"
+      },
+      {
+        "id": 12,
+        "title": "Matched Geometry Animation",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Matched Geometry Animation, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "matched-geometry-animation"
+      },
+      {
+        "id": 13,
+        "title": "Complex NavigationStack",
+        "category": "SwiftUI",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Complex NavigationStack, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "complex-navigationstack"
+      },
+      {
+        "id": 14,
+        "title": "Searchable Sectioned List",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Searchable Sectioned List, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "searchable-sectioned-list"
+      },
+      {
+        "id": 15,
+        "title": "Skeleton Loading UI",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Skeleton Loading UI, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "skeleton-loading-ui"
+      },
+      {
+        "id": 16,
+        "title": "Production Networking Layer",
+        "category": "Networking",
+        "difficulty": "Advanced",
+        "description": "Build URLSession networking with Endpoint abstraction, Codable, retries, timeouts, authentication and typed errors.",
+        "status": "planned",
+        "route": "production-networking-layer"
+      },
+      {
+        "id": 17,
+        "title": "Token Refresh with Single-Flight",
+        "category": "Networking",
+        "difficulty": "Advanced",
+        "description": "Implement access/refresh token handling so concurrent 401s trigger only one refresh operation.",
+        "status": "planned",
+        "route": "token-refresh-with-single-flight"
+      },
+      {
+        "id": 18,
+        "title": "Multipart File Upload",
+        "category": "Networking",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Multipart File Upload, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "multipart-file-upload"
+      },
+      {
+        "id": 19,
+        "title": "WebSocket Chat",
+        "category": "Networking",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for WebSocket Chat, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "websocket-chat"
+      },
+      {
+        "id": 20,
+        "title": "Server-Sent Events / Streaming AI",
+        "category": "Networking",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Server-Sent Events / Streaming AI, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "server-sent-events-streaming-ai"
+      },
+      {
+        "id": 21,
+        "title": "Offline Request Queue",
+        "category": "Networking",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Offline Request Queue, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "offline-request-queue"
+      },
+      {
+        "id": 22,
+        "title": "SwiftData CRUD App",
+        "category": "Persistence",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for SwiftData CRUD App, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "swiftdata-crud-app"
+      },
+      {
+        "id": 23,
+        "title": "Offline-First Repository",
+        "category": "Persistence",
+        "difficulty": "Advanced",
+        "description": "Design local-first reads, remote synchronization, stale-data policy, conflict handling and eventual consistency.",
+        "status": "planned",
+        "route": "offline-first-repository"
+      },
+      {
+        "id": 24,
+        "title": "LRU Image Cache",
+        "category": "Persistence",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for LRU Image Cache, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "lru-image-cache"
+      },
+      {
+        "id": 25,
+        "title": "Secure Keychain Store",
+        "category": "Persistence",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Secure Keychain Store, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "secure-keychain-store"
+      },
+      {
+        "id": 26,
+        "title": "Camera Capture Pipeline",
+        "category": "Camera & Media",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Camera Capture Pipeline, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "camera-capture-pipeline"
+      },
+      {
+        "id": 27,
+        "title": "Document Scanner",
+        "category": "Camera & Media",
+        "difficulty": "Advanced",
+        "description": "Scan documents using Vision/VisionKit with OCR, QR recognition, perspective correction and validation.",
+        "status": "planned",
+        "route": "document-scanner"
+      },
+      {
+        "id": 28,
+        "title": "QR & Barcode Scanner",
+        "category": "Camera & Media",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for QR & Barcode Scanner, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "qr-barcode-scanner"
+      },
+      {
+        "id": 29,
+        "title": "Photo Gallery Grid",
+        "category": "Camera & Media",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Photo Gallery Grid, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "photo-gallery-grid"
+      },
+      {
+        "id": 30,
+        "title": "Video Player",
+        "category": "Camera & Media",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Video Player, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "video-player"
+      },
+      {
+        "id": 31,
+        "title": "Audio Recorder",
+        "category": "Camera & Media",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Audio Recorder, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "audio-recorder"
+      },
+      {
+        "id": 32,
+        "title": "Maps + Live Location",
+        "category": "Location",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Maps + Live Location, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "maps-live-location"
+      },
+      {
+        "id": 33,
+        "title": "Geofencing",
+        "category": "Location",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Geofencing, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "geofencing"
+      },
+      {
+        "id": 34,
+        "title": "Route Tracking",
+        "category": "Location",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Route Tracking, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "route-tracking"
+      },
+      {
+        "id": 35,
+        "title": "BackgroundTasks Scheduler",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for BackgroundTasks Scheduler, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "backgroundtasks-scheduler"
+      },
+      {
+        "id": 36,
+        "title": "Push Notifications",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Push Notifications, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "push-notifications"
+      },
+      {
+        "id": 37,
+        "title": "Deep Links & Universal Links",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Deep Links & Universal Links, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "deep-links-universal-links"
+      },
+      {
+        "id": 38,
+        "title": "Widgets",
+        "category": "System Integration",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Widgets, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "widgets"
+      },
+      {
+        "id": 39,
+        "title": "Live Activities",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Live Activities, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "live-activities"
+      },
+      {
+        "id": 40,
+        "title": "App Intents & Shortcuts",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for App Intents & Shortcuts, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "app-intents-shortcuts"
+      },
+      {
+        "id": 41,
+        "title": "Share Extension",
+        "category": "System Integration",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Share Extension, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "share-extension"
+      },
+      {
+        "id": 42,
+        "title": "App Attest Integration",
+        "category": "Security",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for App Attest Integration, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "app-attest-integration"
+      },
+      {
+        "id": 43,
+        "title": "Certificate Pinning",
+        "category": "Security",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Certificate Pinning, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "certificate-pinning"
+      },
+      {
+        "id": 44,
+        "title": "Biometric Authentication",
+        "category": "Security",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Biometric Authentication, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "biometric-authentication"
+      },
+      {
+        "id": 45,
+        "title": "Sensitive Screen Protection",
+        "category": "Security",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Sensitive Screen Protection, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "sensitive-screen-protection"
+      },
+      {
+        "id": 46,
+        "title": "Encrypted Payload Layer",
+        "category": "Security",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Encrypted Payload Layer, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "encrypted-payload-layer"
+      },
+      {
+        "id": 47,
+        "title": "Accessibility-First Screen",
+        "category": "Quality",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Accessibility-First Screen, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "accessibility-first-screen"
+      },
+      {
+        "id": 48,
+        "title": "Localization & RTL",
+        "category": "Quality",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Localization & RTL, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "localization-rtl"
+      },
+      {
+        "id": 49,
+        "title": "Network Reachability UX",
+        "category": "Quality",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Network Reachability UX, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "network-reachability-ux"
+      },
+      {
+        "id": 50,
+        "title": "App Launch Optimization",
+        "category": "Performance",
+        "difficulty": "Advanced",
+        "description": "Measure pre-main/post-main work, defer SDK initialization and reduce critical launch-path work.",
+        "status": "planned",
+        "route": "app-launch-optimization"
+      },
+      {
+        "id": 51,
+        "title": "Memory Leak Lab",
+        "category": "Performance",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Memory Leak Lab, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "memory-leak-lab"
+      },
+      {
+        "id": 52,
+        "title": "Scrolling Performance Lab",
+        "category": "Performance",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Scrolling Performance Lab, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "scrolling-performance-lab"
+      },
+      {
+        "id": 53,
+        "title": "Image Downsampling",
+        "category": "Performance",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Image Downsampling, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "image-downsampling"
+      },
+      {
+        "id": 54,
+        "title": "Multi-Provider AI Workspace",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Build OpenAI, Gemini and Claude provider abstraction with streaming, cancellation, history and structured output.",
+        "status": "planned",
+        "route": "multi-provider-ai-workspace"
+      },
+      {
+        "id": 55,
+        "title": "Vision OCR Pipeline",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Vision OCR Pipeline, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "vision-ocr-pipeline"
+      },
+      {
+        "id": 56,
+        "title": "Core ML Classifier",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Core ML Classifier, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "core-ml-classifier"
+      },
+      {
+        "id": 57,
+        "title": "Hybrid AI Document Processing",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Combine Vision, local inference, validation and optional cloud reasoning with clear execution boundaries.",
+        "status": "planned",
+        "route": "hybrid-ai-document-processing"
+      },
+      {
+        "id": 58,
+        "title": "Streaming LLM Chat",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Streaming LLM Chat, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "streaming-llm-chat"
+      },
+      {
+        "id": 59,
+        "title": "Structured AI Output",
+        "category": "AI on iOS",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Structured AI Output, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "structured-ai-output"
+      },
+      {
+        "id": 60,
+        "title": "Apple Pay Checkout",
+        "category": "Payments",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Apple Pay Checkout, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "apple-pay-checkout"
+      },
+      {
+        "id": 61,
+        "title": "In-App Purchases",
+        "category": "Payments",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for In-App Purchases, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "in-app-purchases"
+      },
+      {
+        "id": 62,
+        "title": "Payment Status State Machine",
+        "category": "Payments",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Payment Status State Machine, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "payment-status-state-machine"
+      },
+      {
+        "id": 63,
+        "title": "Modular SPM Feature Package",
+        "category": "Architecture",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Modular SPM Feature Package, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "modular-spm-feature-package"
+      },
+      {
+        "id": 64,
+        "title": "Reusable SDK Design",
+        "category": "Architecture",
+        "difficulty": "Advanced",
+        "description": "Design stable public APIs, async APIs, configuration, error handling, versioning and host-app customization.",
+        "status": "planned",
+        "route": "reusable-sdk-design"
+      },
+      {
+        "id": 65,
+        "title": "MVVM State Machine",
+        "category": "Architecture",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for MVVM State Machine, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "mvvm-state-machine"
+      },
+      {
+        "id": 66,
+        "title": "Coordinator / Router Navigation",
+        "category": "Architecture",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Coordinator / Router Navigation, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "coordinator-router-navigation"
+      },
+      {
+        "id": 67,
+        "title": "Feature Flags",
+        "category": "Architecture",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Feature Flags, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "feature-flags"
+      },
+      {
+        "id": 68,
+        "title": "Server-Driven UI",
+        "category": "Architecture",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Server-Driven UI, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "server-driven-ui"
+      },
+      {
+        "id": 69,
+        "title": "ViewModel Unit Testing",
+        "category": "Testing",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for ViewModel Unit Testing, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "viewmodel-unit-testing"
+      },
+      {
+        "id": 70,
+        "title": "Concurrency Test Lab",
+        "category": "Testing",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Concurrency Test Lab, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "concurrency-test-lab"
+      },
+      {
+        "id": 71,
+        "title": "Snapshot Testing Concepts",
+        "category": "Testing",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Snapshot Testing Concepts, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "snapshot-testing-concepts"
+      },
+      {
+        "id": 72,
+        "title": "UI Test Flow",
+        "category": "Testing",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for UI Test Flow, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "ui-test-flow"
+      },
+      {
+        "id": 73,
+        "title": "Passkeys",
+        "category": "Authentication",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Passkeys, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "passkeys"
+      },
+      {
+        "id": 74,
+        "title": "Sign in with Apple",
+        "category": "Authentication",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Sign in with Apple, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "sign-in-with-apple"
+      },
+      {
+        "id": 75,
+        "title": "WebView Session Bridge",
+        "category": "Hybrid Apps",
+        "difficulty": "Advanced",
+        "description": "Open authenticated web content from a native session with secure token exchange, cookie/session handling and navigation controls.",
+        "status": "planned",
+        "route": "webview-session-bridge"
+      },
+      {
+        "id": 76,
+        "title": "JavaScript Bridge",
+        "category": "Hybrid Apps",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for JavaScript Bridge, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "javascript-bridge"
+      },
+      {
+        "id": 77,
+        "title": "Download Manager",
+        "category": "System Integration",
+        "difficulty": "Advanced",
+        "description": "Hands-on practice project for Download Manager, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "download-manager"
+      },
+      {
+        "id": 78,
+        "title": "Notification Center Event Bus",
+        "category": "Architecture",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Notification Center Event Bus, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "notification-center-event-bus"
+      },
+      {
+        "id": 79,
+        "title": "Undo / Redo Editing",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Undo / Redo Editing, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "undo-redo-editing"
+      },
+      {
+        "id": 80,
+        "title": "Drag, Drop & Reordering",
+        "category": "SwiftUI",
+        "difficulty": "Intermediate",
+        "description": "Hands-on practice project for Drag, Drop & Reordering, focused on production-grade iOS design and interview discussion.",
+        "status": "planned",
+        "route": "drag-drop-reordering"
+      }
+    ]
+  }
+}

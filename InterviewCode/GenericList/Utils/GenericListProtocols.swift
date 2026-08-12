@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol GenericListProtocols {
-    func getList() ->
+protocol GenericListRepoProtocol {
+    func getList() async throws -> [GenericList]
 }
