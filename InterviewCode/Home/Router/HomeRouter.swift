@@ -12,7 +12,7 @@ import Combine
 final class HomeRouter: ObservableObject {
     @Published var path: NavigationPath = NavigationPath()
     
-    func navigate() {
-        
+    func navigate(to route: AppRoute) {
+        path.append(route)
     }
 }

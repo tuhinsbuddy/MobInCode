@@ -22,7 +22,7 @@ public enum PhtGroup: String, CaseIterable {
     case older = "Older"
 }
 
-public enum DifficultyLevel: String, CaseIterable {
+public enum Difficulty: String, CaseIterable {
     case easy = "Easy"
     case medium = "Medium"
     case hard = "Hard"
@@ -31,4 +31,10 @@ public enum DifficultyLevel: String, CaseIterable {
 public enum ProblemType: String, CaseIterable {
     case codingChallenge = "Coding Challenge"
     case interviewQuestion = "Interview Question"
+}
+
+public enum AppRoute: String, Hashable {
+    case genericList
+    case contacts
+    case dsa
 }
