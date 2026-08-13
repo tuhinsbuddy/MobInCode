@@ -10,5 +10,10 @@ import Combine
 
 @MainActor
 final class GenericListViewModel: ObservableObject {
+    private let repository: GenericListRepoProtocol
+    
+    init(repo: GenericListRepoProtocol) {
+        self.repository = repo
+    }
     
 }

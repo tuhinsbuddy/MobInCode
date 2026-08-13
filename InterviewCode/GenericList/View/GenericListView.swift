@@ -10,8 +10,8 @@ import SwiftUI
 struct GenericListView: View {
     @StateObject private var vm: GenericListViewModel
     
-    init(vm: GenericListProtocols) {
-        self.vm = vm
+    init(repo: GenericListRepoProtocol) {
+        _vm = StateObject(wrappedValue: GenericListViewModel(repo: repo))
     }
     
     var body: some View {

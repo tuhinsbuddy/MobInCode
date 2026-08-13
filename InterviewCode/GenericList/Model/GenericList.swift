@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct GenericList {
+struct GenericList: Identifiable, Codable, Hashable {
+    let id: Int
     let title: String
     let category: String
     let difficulty: String
-    "description": "Hands-on practice project for Offline Request Queue, focused on production-grade iOS design and interview discussion.",
-    "status": "planned",
-    "route": "offline-request-queue"
+    let description: String
+    let status: String
+    let route: String
 }

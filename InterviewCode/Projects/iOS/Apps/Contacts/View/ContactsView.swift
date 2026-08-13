@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactsView: View {
-    @StateObject private var vm: ContactsViewModel = ContactsViewModel(repo: ContactsRepository())
+    @StateObject private var vm: ContactsViewModel
     
     init(repo: ContactsRepoProtocol) {
         _vm = StateObject(wrappedValue: ContactsViewModel(repo: repo))
