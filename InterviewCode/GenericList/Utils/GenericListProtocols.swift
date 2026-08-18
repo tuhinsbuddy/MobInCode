@@ -9,4 +9,5 @@ import Foundation
 
 protocol GenericListRepoProtocol {
     func getList() async throws -> [GenericList]
+    func fetchTopics() async throws -> TopicSection
 }
