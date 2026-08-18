@@ -12,7 +12,7 @@ import Combine
 final class ICREngine: ObservableObject {
     @Published var path: NavigationPath = NavigationPath()
     
-    func navigate(to route: AppRoute) {
+    func navigate(to route: ICRoute) {
         path.append(route)
     }
     
