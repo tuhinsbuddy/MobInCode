@@ -14,11 +14,13 @@ struct HomeNavigationView: View {
     var body: some View {
         NavigationStack(path: $router.path) {
             HomeView().navigationDestination(for: ICRoute.self) { route in
-                
+                destination(for: route)
             }.environmentObject(router)
         }
     }
-    
+}
+
+private extension HomeNavigationView {
     @ViewBuilder
     private func destination(for route: ICRoute) -> some View {
         switch route {

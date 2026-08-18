@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct GenericListRow: View {
-    
+    let topic: Topic
     
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text(topic.title).font(.headline)
+                Spacer()
+                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.secondary)
+            }
+            Text(topic.description)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .lineLimit(2)
+            HStack(spacing: 8) {
+                Text(topic.category)
+                Text(".")
+                Text(topic.difficulty)
+                Spacer()
+                if topic.status == "in_progress" {
+                    Text("In Progress")
+                }
+            }.font(.caption).foregroundStyle(.secondary)
+        }.padding(.vertical, 6)
     }
 }
