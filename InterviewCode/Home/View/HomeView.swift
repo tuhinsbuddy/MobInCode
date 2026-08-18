@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  InterviewCode
 //
 //  Created by Tuhin Samui on 07/03/26.
@@ -37,5 +37,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    Home()
+    HomeView()
 }

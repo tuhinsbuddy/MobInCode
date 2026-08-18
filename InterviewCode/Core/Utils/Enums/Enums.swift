@@ -33,7 +33,7 @@ public enum ProblemType: String, CaseIterable {
     case interviewQuestion = "Interview Question"
 }
 
-public enum AppRoute: String, Hashable {
+public enum ICRoute: String, Hashable {
     case genericList
     case contacts
     case dsa

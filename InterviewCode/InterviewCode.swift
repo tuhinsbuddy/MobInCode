@@ -25,7 +25,7 @@ struct InterviewCode: App {
 
     var body: some Scene {
         WindowGroup {
-            Home()
+            HomeView()
 //            PolicyListView(repo: PolicyRepository())
 //            ContactsView(repo: ContactsRepository())
         }
