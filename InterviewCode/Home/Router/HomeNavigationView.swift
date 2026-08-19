@@ -27,9 +27,9 @@ private extension HomeNavigationView {
         case .genericList:
             GenericListView(repo: GenericListRepoProtocol())
         case .contacts:
-            
+            ContactsView(repo: ContactsRepository())
         default:
-            print("Nothing Found!")
+            print("Coming Soon!")
             
         }
     }

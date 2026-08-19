@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
-    private let items: [String] = HomeList.allCases.map { $0.rawValue }
+    private let items = HomeList.allCases
+    @EnvironmentObject private var router: ICREngine
     
     var body: some View {
         VStack {
             NavigationSplitView {
                 List {
                     ForEach(items, id: \.self) { item in
-                        NavigationLink {
-                            Text(CoreFunc.getSwiftFile(from: DSAProblems.DSAEasy.twoSum.fileName)?.absoluteString ?? "Empty")
-                        } label: {
-                            Text(item)
+                        Button(item.rawValue) {
+                            router.navigate(to: item.)
                         }
                     }
                 }
